@@ -1,16 +1,137 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html, body {
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+    color: #1e2a57;
+}
+
+.wrapper {
+    padding: 36px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 21px;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0 0 16px 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: #1e2a57;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+    text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff73d;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+img.single {
+    max-width: 400px;
+}
+
+figure {
+    display: block;
+    margin: 0;
+}
+
+figure:hover {
+
+}
+
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: #fff73d;
+    color: #1e2a57;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.c-yellow {
+    color: #fff73d;
+}
+
+.bc-yellow {
+    color: #fff73d;
+}
+
+.c-blue {
+    color: #1e2a57;
+}
+
+.bc-blue {
+    color: #1e2a57;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    padding: 0 16px 16px 0;
+}
+
+.ipfs-link {
+    background-color: #1e2a57;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 16px;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    padding: 2px 3px 4px;
+}
+
+.xtz {
+    background-color: #1e2a57;
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    padding: 6px 12px;
+    color: #fff73d;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.svg-inline--fa {
+    position: relative;
+    top: 3px;
+    width: 16px;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        margin: auto;
+        width: 88%;
+        padding: 6% 0;
+    }
+
+    img {
+        max-width: 400px;
+    }
+
+    .box {
+        position: relative;
+        display: block;
+        padding: 0 16px 16px 0;
+    }
 }
