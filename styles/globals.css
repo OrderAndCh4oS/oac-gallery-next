@@ -84,6 +84,9 @@ figcaption {
 }
 
 .box {
+    box-sizing: border-box;
+    width: 416px;
+    height: 420px;
     position: relative;
     display: inline-block;
     padding: 0 16px 16px 0;
@@ -130,6 +133,13 @@ figcaption {
     }
 
     .box {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        min-width: 240px;
+        min-height: 240px;
+        max-width: 416px;
+        max-height: 420px;
         position: relative;
         display: block;
         padding: 0 16px 16px 0;
