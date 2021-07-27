@@ -115,6 +115,30 @@ figcaption {
     font-size: 12px;
 }
 
+.label {
+    display: inline-block;
+    margin-right: 12px;
+    color: #1e2a57;
+    font-size: 16px;
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+
+}
+
+.select {
+    background-color: #ffffff;
+    border: 2px solid #fff73d;
+    color: #1e2a57;
+    font-size: 16px;
+    padding: 4px 8px;
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+    margin-bottom: 16px;
+}
+
+.select:focus {
+    border-style: dashed;
+    outline: none;
+}
+
 .svg-inline--fa {
     position: relative;
     top: 3px;
