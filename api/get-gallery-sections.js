@@ -37,7 +37,7 @@ const parseObjkt = (obj, objkt) => {
     const supply = objkt.supply;
     const available = objkt.token_holders.reduce((sum, th) => sum + th.quantity, 0);
     const notForSaleText = available === 0 ? 'SOLD' : 'NOT LISTED';
-    const price = objkt.swaps.length ? (objkt.swaps[0].price * 0.000001) + 'xtz' : notForSaleText;
+    const price = objkt.swaps.length ? (objkt.swaps[0].price * 0.000001) + 'ꜩ' : notForSaleText;
     const availability = `${available}/${supply}`;
 
     return {...obj, [objkt.id]: {...objkt, price, availability}};

@@ -6,6 +6,10 @@ function MyApp({Component, pageProps}) {
         <>
             <Head>
                 <title>Order &amp; Chaos | Hic et Nunc NFT Gallery</title>
+                <meta
+                    name="description"
+                    content="Gallery of generative art Hic et Nunc objkts created & minted by Order &amp; Chaos."
+                />
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@__orderandchaos"/>
                 <meta name="twitter:creator" content="@__orderandchaos"/>
