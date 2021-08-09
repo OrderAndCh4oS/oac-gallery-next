@@ -1,5 +1,14 @@
 const galleryData = [
     {
+        title: 'JavaScript + Canvas',
+        items: [
+            198414,
+            92085,
+            44295,
+            29715,
+        ],
+    },
+    {
         title: 'Threaded Peaks',
         items: [
             180043,
@@ -88,14 +97,6 @@ const galleryData = [
             47249,
             47045,
             47035,
-        ],
-    },
-    {
-        title: 'JavaScript + Canvas',
-        items: [
-            92085,
-            44295,
-            29715,
         ],
     },
     {
