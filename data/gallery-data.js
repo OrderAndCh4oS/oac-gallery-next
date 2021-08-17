@@ -89,13 +89,6 @@ const galleryData = [
         ],
     },
     {
-        title: 'Tezos: Order & Chaos',
-        items: [
-            69518,
-            69514,
-        ],
-    },
-    {
         title: 'Wired',
         items: [
             66672,
