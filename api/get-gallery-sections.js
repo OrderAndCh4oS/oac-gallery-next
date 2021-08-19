@@ -51,7 +51,6 @@ const parseObjktsResponse = (response) => {
 
 const getGallerySections = async() => {
     const response = await request('https://api.hicdex.com/v1/graphql', query, variables);
-    console.log(response);
     return parseObjktsResponse(response);
 };
 
