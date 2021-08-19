@@ -28,6 +28,7 @@ const variables = {
     "addresses": [
         "tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN",
         "tz1KySTBB8RXWVraggfXWLaLR9H3K3JBEbgt",
+        "tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn",
         "KT1HbQepzV1nVGg8QVznG7z4RcHseD5kwqBn",
         "KT1FvqJwEDWb1Gwc55Jd1jjTHRVWbYKUUpyq",
     ],
@@ -50,6 +51,7 @@ const parseObjktsResponse = (response) => {
 
 const getGallerySections = async() => {
     const response = await request('https://api.hicdex.com/v1/graphql', query, variables);
+    console.log(response);
     return parseObjktsResponse(response);
 };
 

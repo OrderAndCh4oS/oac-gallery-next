@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export async function getStaticProps(context) {
     const gallerySections = await getGallerySections();
-
+    console.log(gallerySections)
     return {
         props: {gallerySections},
         revalidate: 300,
