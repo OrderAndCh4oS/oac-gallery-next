@@ -2,6 +2,7 @@ const galleryData = [
     {
         title: 'JavaScript + Canvas',
         items: [
+            217021,
             210272,
             208228,
             208049,
@@ -21,6 +22,23 @@ const galleryData = [
             44295,
             29715,
         ],
+    },
+    {
+        title: 'Pipe Stripes',
+        items: [
+            217557,
+            217555,
+            217549,
+            217542,
+            217538,
+            217532,
+            217523,
+            217520,
+            217517,
+            217515,
+            217512,
+            217507,
+        ]
     },
     {
         title: 'Pipes',
