@@ -2,6 +2,7 @@ const galleryData = [
     {
         title: 'JavaScript + Canvas',
         items: [
+            236623,
             225620,
             217021,
             210272,
@@ -23,6 +24,15 @@ const galleryData = [
             44295,
             29715,
         ],
+    },
+    {
+        title: 'Pipes Black',
+        items: [
+            236137,
+            236143,
+            236145,
+            236152
+        ]
     },
     {
         title: 'Pipe Alternate Black & White',
