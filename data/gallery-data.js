@@ -29,7 +29,7 @@ const galleryData = [
         title: 'Pipes Depth',
         items: [
             237378,
-            237365,
+            237179,
             237362,
             237305,
             237300,
