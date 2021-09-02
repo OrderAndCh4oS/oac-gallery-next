@@ -29,6 +29,19 @@ const galleryData = [
         ],
     },
     {
+        title: 'Spectral Pipes',
+        items: [
+            253676,
+            253673,
+            253672,
+            253669,
+            253668,
+            253666,
+            253664,
+            253661
+        ]
+    },
+    {
         title: 'Pipes Depth',
         items: [
             237378, 237365, 237362,
