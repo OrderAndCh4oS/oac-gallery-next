@@ -2,6 +2,8 @@ const galleryData = [
     {
         title: 'JavaScript + Canvas',
         items: [
+            266197,
+            261977,
             250903,
             245273,
             241546,
