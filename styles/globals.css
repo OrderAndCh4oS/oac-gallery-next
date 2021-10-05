@@ -4,8 +4,8 @@ html, body {
 }
 
 .wrapper {
-    padding: 36px;
-    width: 90%;
+    padding: 36px 24px;
+    width: 100%;
 }
 
 h1 {

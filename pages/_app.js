@@ -74,6 +74,8 @@ function MyApp({Component, pageProps}) {
                         <a href="https://www.hicetnunc.xyz/tz/tz1KySTBB8RXWVraggfXWLaLR9H3K3JBEbgt">tz1Ky...BEbgt</a>
                         <br/>
                         <a href="https://www.hicetnunc.xyz/tz/tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn">tz1dA...x4gWn</a>
+                        <br/>
+                        <a href="https://www.hicetnunc.xyz/tz/tz1iM7PB4brTmkbTUccsrXYjepSQ6ext7KYu">tz1iM...t7KYu</a>
                     </p>
                 </header>
                 <Component {...pageProps} />
