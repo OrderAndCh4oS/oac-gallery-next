@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Grafista-Regular';
+    src: url('/fonts/grafista-regular.woff2') format('woff2'),
+    url('/fonts/grafista-regular.woff') format('woff'),
+    url('/fonts/grafista-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
     color: #1e2a57;
