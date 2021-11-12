@@ -1,6 +1,6 @@
 const GalleryItem = ({item}) =>
     <div className="box">
-        <a href={`https://hicetnunc.xyz/objkt/${item.id}`}>
+        <a href={`https://objkt.com/asset/hicetnunc/${item.id}`}>
             <figure>
                 <picture>
                     <source
