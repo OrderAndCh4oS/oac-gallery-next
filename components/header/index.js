@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import useTezos from '../../hooks/use-tezos';
 import styles from './styles.module.css';
 
@@ -8,9 +9,11 @@ const Header = () => {
         <header className={styles.header}>
             <div>
                 <h1>
-                    <a href="https://objkt.com/profile/tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN">
-                        Order &amp; Chaos
-                    </a>
+                    <Link href='/' passHref>
+                        <a>
+                            Order &amp; Chaos
+                        </a>
+                    </Link>
                 </h1>
                 <p>Hic et Nunc Wallets:
                     <br/>
