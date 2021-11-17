@@ -10,9 +10,12 @@
 html, body {
     font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
     color: #1e2a57;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
+    box-sizing: border-box;
     padding: 36px 24px;
     width: 100%;
 }
@@ -38,6 +41,23 @@ a:hover {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid #fff73d;
+}
+
+button {
+    font-family: "Grafista-Regular", "American Typewriter", "Courier New", "Courier", monospace;
+    background-color: #1e2a57;
+    color: #fff73d;
+    border: none;
+    border-bottom: 3px solid #1e2a57;
+    padding: 6px 20px 3px;
+    border-radius: 0;
+}
+
+button:hover, button:focus {
+    outline: none;
+    background-color: #fff73d;
+    color: #1e2a57;
+    cursor: pointer;
 }
 
 img {
@@ -69,6 +89,10 @@ figcaption {
     letter-spacing: 2px;
     font-size: 12px;
     z-index: 1;
+}
+
+footer {
+    padding-top: 40px;
 }
 
 .c-yellow {

@@ -1,0 +1,18 @@
+
+.viewHolder {
+    padding: 16px 0;
+}
+
+.img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.iframe {
+    padding: 16px 0;
+    width: 600px;
+    height: 600px;
+    border: none;
+    display: block;
+}

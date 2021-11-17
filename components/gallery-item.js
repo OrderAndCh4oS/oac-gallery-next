@@ -1,6 +1,9 @@
+import Link from 'next/link'
+
 const GalleryItem = ({item}) =>
     <div className="box">
-        <a href={`https://objkt.com/asset/hicetnunc/${item.id}`}>
+        <Link href={`/objkt/${item.id}`} passHref>
+            <a>
             <figure>
                 <picture>
                     <source
@@ -16,7 +19,8 @@ const GalleryItem = ({item}) =>
                 </picture>
                 <figcaption>{item.id}</figcaption>
             </figure>
-        </a>
+            </a>
+        </Link>
         <div className="xtz">{item.price} {item.availability}</div>
         <a
             className="ipfs-link"
