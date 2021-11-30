@@ -62,6 +62,20 @@ const ToolsProvider = ({children}) => {
                                 .toTransferParams(
                                     {amount: 0, mutez: true, storageLimit: 270}
                                 )
+                        },
+                        {
+                            kind: OpKind.TRANSACTION,
+                            ...objkts.methods.update_operators([
+                                {
+                                    remove_operator: {
+                                        operator: contracts.v2,
+                                        token_id: parseFloat(o.id),
+                                        owner: auth.address
+                                    }
+                                }])
+                                .toTransferParams(
+                                    {amount: 0, mutez: true, storageLimit: 175}
+                                )
                         }
                     ]
                 , []);
@@ -127,14 +141,14 @@ const ToolsProvider = ({children}) => {
 
     const collect = async(swapId, xtzAmount) => {
         try {
-            const v2 = await Tezos.wallet.at(contracts.v2)
+            const v2 = await Tezos.wallet.at(contracts.v2);
             const operation = await v2.methods
                 .collect(parseFloat(swapId))
                 .send({
                     amount: parseFloat(xtzAmount),
                     mutez: true,
                     storageLimit: 310
-                })
+                });
             await operation.confirmation(confirmations);
         } catch(e) {
             console.log('Error:', e);
