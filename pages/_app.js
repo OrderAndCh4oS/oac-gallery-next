@@ -9,7 +9,7 @@ function MyApp({Component, pageProps}) {
     return (
         <>
             <Head>
-                <title>Order &amp; Chaos | Hic et Nunc NFT Gallery</title>
+                <title>Order &amp; Chaos | Gen-art Gallery</title>
                 <meta
                     name="description"
                     content="Gallery of generative art NFTS minted by Order &amp; Chaos."
