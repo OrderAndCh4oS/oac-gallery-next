@@ -1,6 +1,6 @@
 import getGallerySectionsByOwner from '../../api/get-gallery-sections-by-owner';
-import GalleryItem from '../../components/gallery-item';
 import CollectionItem from '../../components/collection-item';
+import {getTrimmedWallet} from '../../utilities/get-trimmed-wallet';
 
 export async function getServerSideProps({params}) {
     const {ownerAddress} = params;
@@ -12,15 +12,16 @@ export async function getServerSideProps({params}) {
     }
 
     return {
-        props: {collection}
+        props: {ownerAddress, collection}
     };
 }
 
-const OwnerAddress = ({collection}) => {
-    console.log(collection);
+const OwnerAddress = ({ownerAddress, collection}) => {
     return (
         <>
-            {collection.map(objkt => <CollectionItem key={objkt.id} objkt={objkt}/>)}
+            <h2>{getTrimmedWallet(ownerAddress)}'s Collection</h2>
+            {collection.map(
+                objkt => <CollectionItem key={objkt.id} objkt={objkt}/>)}
         </>
     );
 };
