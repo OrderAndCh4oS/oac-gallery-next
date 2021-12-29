@@ -19,7 +19,7 @@ export async function getServerSideProps({params}) {
 const OwnerAddress = ({ownerAddress, collection}) => {
     return (
         <>
-            <h2>{getTrimmedWallet(ownerAddress)}'s Collection</h2>
+            <h2>{getTrimmedWallet(ownerAddress)} Collection</h2>
             {collection.map(
                 objkt => <CollectionItem key={objkt.id} objkt={objkt}/>)}
         </>
