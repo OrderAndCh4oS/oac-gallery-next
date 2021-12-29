@@ -9,7 +9,7 @@ function MyApp({Component, pageProps}) {
     return (
         <>
             <Head>
-                <title>Order &amp; Chaos | Gen-art Gallery</title>
+                <title>Order &amp; Chaos — Gen-art Gallery</title>
                 <meta
                     name="description"
                     content="Gallery of generative art NFTS minted by Order &amp; Chaos."
@@ -17,7 +17,7 @@ function MyApp({Component, pageProps}) {
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@__orderandchaos"/>
                 <meta name="twitter:creator" content="@__orderandchaos"/>
-                <meta name="twitter:title" content="Order &amp; Chaos Gallery"/>
+                <meta name="twitter:title" content="Order &amp; Chaos — Gen-art Gallery"/>
                 <meta
                     name="twitter:description"
                     content="Gallery of generative art NFTS minted by Order &amp; Chaos."
@@ -26,7 +26,7 @@ function MyApp({Component, pageProps}) {
                     name="twitter:image"
                     content="https://dwodb1f89mlko.cloudfront.net/logo/order-and-chaos-logo.png"
                 />
-                <meta property="og:title" content="Order &amp; Chaos Gallery"/>
+                <meta property="og:title" content="Order &amp; Chaos — Gen-art Gallery"/>
                 <meta property="og:url" content="https://hicetnunc.orderandchaoscreative.com/"/>
                 <meta property="og:type" content="gallery"/>
                 <meta
