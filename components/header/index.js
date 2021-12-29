@@ -10,14 +10,24 @@ const Header = () => {
             <div>
                 <h1>
                     <Link href='/' passHref>
-                        <a>
-                            Order &amp; Chaos
-                        </a>
+                        <a>Order &amp; Chaos</a>
                     </Link>
                 </h1>
             </div>
             <div className={styles.auth}>
                 <p>
+                    {auth &&
+                        <Link href={`/`}>
+                            <a>All</a>
+                        </Link>
+                    }
+                    <span className='c-yellow'> | </span>
+                    {auth &&
+                        <Link href={`/collection/${auth.address}`}>
+                            <a>Collection</a>
+                        </Link>
+                    }
+                    <span className='c-yellow'> | </span>
                     {auth ? ' ' + auth.address : ' Sync wallet to begin'}
                     {' '}
                     {!auth

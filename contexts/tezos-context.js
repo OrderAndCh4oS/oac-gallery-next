@@ -14,6 +14,7 @@ const network = {
 };
 Tezos.setWalletProvider(wallet);
 
+
 export const TezosContext = createContext({
     Tezos,
     user: null,
