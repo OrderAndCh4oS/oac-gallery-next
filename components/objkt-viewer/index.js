@@ -13,7 +13,7 @@ const ObjktSwitch = ({objkt}) => {
             return <div>
                 <img
                     className={styles.img}
-                    src={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
+                    src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.artifact_uri.slice(7)}
                     alt={objkt.title}
                 />
             </div>;
