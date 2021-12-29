@@ -1,24 +1,24 @@
 import Link from 'next/link'
 import styles from './objkt-viewer/styles.module.css';
 
-const CollectionItem = ({objkt}) =>
+const CollectionItem = ({gentk}) =>
     <div className="box">
-        <Link href={`/objkt/${objkt.id}`} passHref>
+        <Link href={`/objkt/${gentk.id}`} passHref>
             <a>
             <figure>
                 <img
                     className={styles.img}
-                    src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.display_uri.slice(7)}
-                    alt={objkt.title}
+                    src={'https://orderandchaos.mypinata.cloud/ipfs/' + gentk.display_uri.slice(7)}
+                    alt={gentk.title}
                 />
-                <figcaption>{objkt.id}</figcaption>
+                <figcaption>{gentk.id}</figcaption>
             </figure>
             </a>
         </Link>
-        <div className="xtz">{objkt.price} {objkt.availability}</div>
+        <div className="xtz">{gentk.price} {gentk.availability}</div>
         <a
             className="ipfs-link"
-            href={objkt.artifact_uri}
+            href={gentk.artifact_uri}
             title="View IPFS"
         >
             <img

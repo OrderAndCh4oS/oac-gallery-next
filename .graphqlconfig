@@ -9,6 +9,20 @@
           "user-agent": "JS GraphQL"
         },
         "introspect": false
+      },
+      "FxHash": {
+        "url": "https://api.fxhash.xyz/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      },
+      "Objkt": {
+        "url": "https://data.objkt.com/v1/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
       }
     }
   }

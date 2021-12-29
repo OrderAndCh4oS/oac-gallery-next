@@ -16,11 +16,13 @@ const Header = () => {
             </div>
             <div className={styles.auth}>
                 <p>
-                    {auth &&
-                        <Link href={`/`}>
-                            <a>All</a>
-                        </Link>
-                    }
+                    <Link href={`/`}>
+                        <a>Hic et Nunc</a>
+                    </Link>
+                    <span className='c-yellow'> | </span>
+                    <Link href={'/fxhash'}>
+                        FxHash
+                    </Link>
                     <span className='c-yellow'> | </span>
                     {auth &&
                         <Link href={`/collection/${auth.address}`}>
