@@ -12,7 +12,7 @@ function MyApp({Component, pageProps}) {
                 <title>Order &amp; Chaos — Gen-art Gallery</title>
                 <meta
                     name="description"
-                    content="Gallery of generative art NFTS minted by Order &amp; Chaos."
+                    content="Gallery of generative art NFTs minted by Order &amp; Chaos."
                 />
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@__orderandchaos"/>
@@ -20,7 +20,7 @@ function MyApp({Component, pageProps}) {
                 <meta name="twitter:title" content="Order &amp; Chaos — Gen-art Gallery"/>
                 <meta
                     name="twitter:description"
-                    content="Gallery of generative art NFTS minted by Order &amp; Chaos."
+                    content="Gallery of generative art NFTs minted by Order &amp; Chaos."
                 />
                 <meta
                     name="twitter:image"
@@ -31,7 +31,7 @@ function MyApp({Component, pageProps}) {
                 <meta property="og:type" content="gallery"/>
                 <meta
                     property="og:description"
-                    content="Gallery of generative art NFTS minted by Order &amp; Chaos."
+                    content="Gallery of generative art NFTs minted by Order &amp; Chaos."
                 />
                 <meta
                     property="og:image"
