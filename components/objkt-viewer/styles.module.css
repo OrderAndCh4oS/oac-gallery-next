@@ -1,6 +1,8 @@
 
 .viewHolder {
-    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem;
 }
 
 .img {
@@ -10,7 +12,7 @@
 }
 
 .iframe {
-    padding: 16px 0;
+    padding: 1rem 0;
     width: 600px;
     height: 600px;
     border: none;

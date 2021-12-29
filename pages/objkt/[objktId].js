@@ -50,18 +50,22 @@ export default function Objkt({initialObjkt}) {
     };
 
     return (
-        <>
+        <article>
             <Link href="/">Back</Link>
             <ObjktViewer objkt={objkt}/>
-            <h1>{objkt.title}</h1>
-            <p>{objkt.description}</p>
-            <p>Tags: {objkt.token_tags.map(tag => (tag.tag.tag)).join(', ')}</p>
-            <p>Mimetype: {objkt.mime}</p>
-            <p>IPFS: <a
-                href={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
-            >
-                {'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
-            </a></p>
+            <div className={styles.metadata}>
+                <h1>{objkt.title}</h1>
+                <p>Editions: {objkt.availability}</p>
+                <p>{objkt.description}</p>
+                <p>Tags: {objkt.token_tags.map(tag => (tag.tag.tag))
+                    .join(', ')}</p>
+                <p>Mimetype: {objkt.mime}</p>
+                <p>IPFS: <a
+                    href={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
+                >
+                    {'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
+                </a></p>
+            </div>
             {objkt.swaps.length ? (
                 <>
                     <h2>Swaps</h2>
@@ -90,6 +94,6 @@ export default function Objkt({initialObjkt}) {
                     <button onClick={handleCloseToast}>Close</button>
                 </div>
             )}
-        </>
+        </article>
     );
 }

@@ -15,16 +15,6 @@ const Header = () => {
                         </a>
                     </Link>
                 </h1>
-                <p>Hic et Nunc Wallets:
-                    <br/>
-                    <a href="https://objkt.com/profile/tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN">tz1Vg...HjpGN</a>
-                    <br/>
-                    <a href="https://objkt.com/profile/tz1KySTBB8RXWVraggfXWLaLR9H3K3JBEbgt">tz1Ky...BEbgt</a>
-                    <br/>
-                    <a href="https://objkt.com/profile/tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn">tz1dA...x4gWn</a>
-                    <br/>
-                    <a href="https://objkt.com/profile/tz1iM7PB4brTmkbTUccsrXYjepSQ6ext7KYu">tz1iM...t7KYu</a>
-                </p>
             </div>
             <div className={styles.auth}>
                 <p>
