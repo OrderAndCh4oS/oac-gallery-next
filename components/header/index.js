@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import useTezos from '../../hooks/use-tezos';
 import styles from './styles.module.css';
+import {getTrimmedWallet} from '../../utilities/get-trimmed-wallet';
 
 const Header = () => {
     const {sync, unsync, auth} = useTezos();
@@ -28,13 +29,17 @@ const Header = () => {
                         Objkt
                     </Link>
                     <span className='c-yellow'> | </span>
+                    <Link href={'/rarible'}>
+                        Rarible
+                    </Link>
+                    <span className='c-yellow'> | </span>
                     {auth &&
                         <Link href={`/collection/${auth.address}`}>
                             <a>Collection</a>
                         </Link>
                     }
                     <span className='c-yellow'> | </span>
-                    {auth ? ' ' + auth.address : ' Sync wallet to begin'}
+                    {auth ? ' ' + getTrimmedWallet(auth.address) : ' Sync wallet to begin'}
                     {' '}
                     {!auth
                     ? <button onClick={sync}>Sync</button>
