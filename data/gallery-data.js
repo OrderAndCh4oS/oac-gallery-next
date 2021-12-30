@@ -36,19 +36,14 @@ const galleryData = [
         ]
     },
     {
-        title: 'Sorted Pipes',
+        title: 'Pipes: Series',
         items: [
             322083, 322074, 322044,
             322034, 321996, 321976,
             321959, 321926, 321906,
             321861, 321802, 321778,
             321711, 321661, 321530,
-            321497
-        ]
-    },
-    {
-        title: 'Spectral Pipes',
-        items: [
+            321497,
             253676,
             253673,
             253672,
@@ -56,33 +51,17 @@ const galleryData = [
             253668,
             253666,
             253664,
-            253661
-        ]
-    },
-    {
-        title: 'Pipes Depth',
-        items: [
+            253661,
             237378, 237365, 237362,
             237305, 237300, 237299,
             237298, 237296, 237286,
             237245, 237234, 237224,
             237197, 237187, 237179,
-            237170
-        ]
-
-    },
-    {
-        title: 'Pipes Black',
-        items: [
+            237170,
             236137,
             236143,
             236145,
-            236152
-        ]
-    },
-    {
-        title: 'Pipe Alternate Black & White',
-        items: [
+            236152,
             220814,
             220809,
             220804,
@@ -102,12 +81,7 @@ const galleryData = [
             220677,
             220670,
             220643,
-            220661
-        ]
-    },
-    {
-        title: 'Pipe Alternate',
-        items: [
+            220661,
             220066,
             220062,
             220057,
@@ -119,12 +93,7 @@ const galleryData = [
             220022,
             220016,
             220011,
-            220003
-        ]
-    },
-    {
-        title: 'Pipe Stripes',
-        items: [
+            220003,
             217557,
             217555,
             217549,
@@ -136,12 +105,7 @@ const galleryData = [
             217517,
             217515,
             217512,
-            217507
-        ]
-    },
-    {
-        title: 'Pipes',
-        items: [
+            217507,
             215546,
             215542,
             215536,
@@ -346,21 +310,9 @@ const galleryData = [
         ]
     },
     {
-        title: 'Ben-Day Dot Patchwork',
+        title: 'Harmonographs',
         items: [
-            43411,
-            43402
-        ]
-    },
-    {
-        title: 'Lifeblood',
-        items: [
-            33765
-        ]
-    },
-    {
-        title: 'Harmonograph Black & White Twine',
-        items: [
+            33765,
             32207,
             32200,
             32188,
@@ -370,309 +322,79 @@ const galleryData = [
         ]
     },
     {
-        title: 'Like Me',
+        title: 'Misc',
         items: [
-            28352
-        ]
-    },
-    {
-        title: 'Triangle Crush & Cacophony',
-        items: [
+            43411,
+            43402,
+            28352,
             28310,
-            28307
-        ]
-    },
-    {
-        title: 'Bold Polygon Series',
-        items: [
+            28307,
             28234,
             27996,
-            27978
-        ]
-    },
-    {
-        title: 'Mantis & Scorpion',
-        items: [
+            27978,
             26222,
-            26218
-        ]
-    },
-    {
-        title: 'Origami',
-        items: [
+            26218,
             25276,
-            25273
-        ]
-    },
-    {
-        title: 'Faux Airbrush Tiles',
-        items: [
-            24080
-        ]
-    },
-    {
-        title: 'Entanglement',
-        items: [
-            23944
-        ]
-    },
-    {
-        title: 'Sin Wave Lines',
-        items: [
-            23653
-        ]
-    },
-    {
-        title: 'Frequency + Amplitude',
-        items: [
+            25273,
+            24080,
+            23944,
+            23653,
             22562,
             22560,
-            22559
-        ]
-    },
-    {
-        title: 'Bold Strange Attractor Series',
-        items: [
+            22559,
             21747,
             21744,
-            21742
-        ]
-    },
-    {
-        title: 'Tempest',
-        items: [
+            21742,
             21672,
-            21663
-        ]
-    },
-    {
-        title: 'Salamander + Mesmerise',
-        items: [
+            21663,
             21176,
-            13378
-        ]
-    },
-    {
-        title: 'Mandala',
-        items: [
-            21125
-        ]
-    },
-    {
-        title: 'Be Square',
-        items: [
+            13378,
+            21125,
             20888,
-            20883
-        ]
-    },
-    {
-        title: 'Bezier Dots',
-        items: [
+            20883,
             20239,
             20232,
             20226,
-            20223
-        ]
-    },
-    {
-        title: 'Foliage Blossom',
-        items: [
+            20223,
             19047,
             19046,
-            19035
-        ]
-    },
-    {
-        title: 'Foliage Night',
-        items: [
+            19035,
             18798,
             18794,
-            18785
-        ]
-    },
-    {
-        title: 'Perlin Noise Series',
-        items: [
+            18785,
             18236,
             18233,
-            17991
-        ]
-    },
-    {
-        title: 'Indecisive Strange Attractor',
-        items: [
-            17797
-        ]
-    },
-    {
-        title: 'Mesh Cloth Lines — Candy',
-        items: [
-            16801
-        ]
-    },
-    {
-        title: 'Springy Line Wave',
-        items: [
-            16786
-        ]
-    },
-    {
-        title: 'Ridge',
-        items: [
-            16743
-        ]
-    },
-    {
-        title: 'Jagged Spirals',
-        items: [
+            17991,
+            17797,
+            16801,
+            16786,
+            16743,
             15963,
-            13320
-        ]
-    },
-    {
-        title: 'Dead End',
-        items: [
-            15168
-        ]
-    },
-    {
-        title: 'Plumage',
-        items: [
-            15063
-        ]
-    },
-    {
-        title: 'Exotic Feather',
-        items: [
-            14889
-        ]
-    },
-    {
-        title: 'Space Time',
-        items: [
-            14732
-        ]
-    },
-    {
-        title: 'The Red Rooster',
-        items: [
-            14712
-        ]
-    },
-    {
-        title: 'Ragged Mesh No.1',
-        items: [
-            14533
-        ]
-    },
-    {
-        title: 'Ragged Mesh No.2',
-        items: [
-            14531
-        ]
-    },
-    {
-        title: 'Nemesis',
-        items: [
-            14364
-        ]
-    },
-    {
-        title: 'Adversaries',
-        items: [
-            14354
-        ]
-    },
-    {
-        title: 'Cinders',
-        items: [
-            14192
-        ]
-    },
-    {
-        title: 'Bounce',
-        items: [
-            14180
-        ]
-    },
-    {
-        title: 'Corn Field',
-        items: [
-            14123
-        ]
-    },
-    {
-        title: 'Attitude',
-        items: [
-            13976
-        ]
-    },
-    {
-        title: 'Thread Peaks',
-        items: [
-            13961
-        ]
-    },
-    {
-        title: 'Poor Man\'s Voronoi v2',
-        items: [
-            13567
-        ]
-    },
-    {
-        title: 'Boids Convergence & Boid Implosion',
-        items: [
+            13320,
+            15168,
+            15063,
+            14889,
+            14732,
+            14712,
+            14533,
+            14531,
+            14364,
+            14354,
+            14192,
+            14180,
+            14123,
+            13976,
+            13961,
             13347,
-            13210
-        ]
-    },
-    {
-        title: 'Pins & Needles',
-        items: [
-            13329
-        ]
-    },
-
-    {
-        title: 'Sherberts',
-        items: [
-            13246
-        ]
-    },
-    {
-        title: 'Orbit',
-        items: [
-            13241
-        ]
-    },
-    {
-        title: 'Moiré Coral & Azure',
-        items: [
+            13210,
+            13329,
+            13246,
+            13241,
             13148,
-            13143
-        ]
-    },
-    {
-        title: 'Tendrils',
-        items: [
-            13103
-        ]
-    },
-    {
-        title: 'Red, White & Blue',
-        items: [
-            13098
-        ]
-    },
-    {
-        title: 'Koi',
-        items: [
-            13085
-        ]
-    },
-    {
-        title: 'Chimp',
-        items: [
+            13143,
+            13103,
+            13098,
+            13085,
             13048
         ]
     }

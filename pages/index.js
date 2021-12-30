@@ -4,17 +4,23 @@ import {createRef, useState} from 'react';
 import styles from './styles.module.css';
 
 export async function getStaticProps(context) {
-    let gallerySections
+    let gallerySections;
     try {
         gallerySections = await getGallerySections();
     } catch(e) {
-        gallerySections = []
+        gallerySections = [];
     }
 
     return {
         props: {gallerySections},
         revalidate: 300
     };
+}
+
+function filterProjects(filter, gallerySections) {
+    return filter !== 'all'
+        ? gallerySections.filter(gs => gs.title === filter)
+        : gallerySections;
 }
 
 function filterSections(filter, gallerySections) {
@@ -38,13 +44,16 @@ function sortSections(sort, filteredSections) {
 
 export default function Home({gallerySections}) {
     const [sections, setSections] = useState(gallerySections);
+    const projectRef = createRef();
     const filterRef = createRef();
     const sortRef = createRef();
 
     const handleChange = () => {
+        const project = projectRef.current.value;
         const filter = filterRef.current.value;
         const sort = sortRef.current.value;
-        let nextSections = filterSections(filter, [...gallerySections]);
+        let nextSections = filterProjects(project, [...gallerySections]);
+        nextSections = filterSections(filter, nextSections);
         if(sort !== 'none') {
             nextSections = sortSections(sort, nextSections);
         }
@@ -67,7 +76,8 @@ export default function Home({gallerySections}) {
                     </select>
                 </div>
                 <div className={styles.marginLeft}>
-                    <label htmlFor="sort" className="label">Sort (per collection)</label>
+                    <label htmlFor="sort" className="label">Sort (per
+                                                            collection)</label>
                     <select
                         onChange={handleChange}
                         className="select"
@@ -77,6 +87,21 @@ export default function Home({gallerySections}) {
                         <option value={'none'}>None</option>
                         <option value={'low-to-high'}>Low to High</option>
                         <option value={'high-to-low'}>High to Low</option>
+                    </select>
+                </div>
+                <div className={styles.marginLeft}>
+                    <label htmlFor="project" className="label">Project</label>
+                    <select
+                        onChange={handleChange}
+                        className="select"
+                        id="project"
+                        ref={projectRef}
+                    >
+                        <option value={'all'}>All</option>
+                        {gallerySections.map(section => <option
+                            key={`${section.title}_opt`}
+                            value={section.title}
+                        >{section.title}</option>)}
                     </select>
                 </div>
             </div>
