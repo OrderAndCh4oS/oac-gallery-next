@@ -11,9 +11,11 @@ const query = gql`
                 fa2: {live: {_eq: true}},
                 fa2_id: {_in: $contracts},
                 supply: {_gt:0},
-            }
+            },
+            order_by: {timestamp: asc}
         ) {
             id
+            fa2_id
             title
             artifact_uri
             display_uri
@@ -38,7 +40,7 @@ const getObjktCreations = async(contracts) => {
             }
             offset += 250;
         } while(response?.token?.length);
-        return objkts;
+        return objkts.reverse();
     } catch(e) {
         console.log('Error fetching created objkts');
         return null;

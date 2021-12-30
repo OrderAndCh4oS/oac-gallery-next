@@ -24,6 +24,10 @@ const Header = () => {
                         FxHash
                     </Link>
                     <span className='c-yellow'> | </span>
+                    <Link href={'/objkt'}>
+                        Objkt
+                    </Link>
+                    <span className='c-yellow'> | </span>
                     {auth &&
                         <Link href={`/collection/${auth.address}`}>
                             <a>Collection</a>
