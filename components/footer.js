@@ -27,6 +27,8 @@ const Footer = () =>
             <a href="https://objkt.com/profile/tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn">tz1dA...x4gWn</a>
             <br/>
             <a href="https://objkt.com/profile/tz1iM7PB4brTmkbTUccsrXYjepSQ6ext7KYu">tz1iM...t7KYu</a>
+            <br/>
+            <a href="https://objkt.com/profile/tz1PwBHUVht6QmKWTd3fAAgx3BHM9RBjCLt2">tz1Pw...jCLt2</a>
         </p>
         <a href="https://orderandchaos.xyz">
             <svg

@@ -21,7 +21,7 @@ const OwnerAddress = ({ownerAddress, collection}) => {
         <>
             <h2>{getTrimmedWallet(ownerAddress)} Collection</h2>
             {collection.map(
-                objkt => <CollectionItem key={objkt.id} gentk={objkt}/>)}
+                objkt => <CollectionItem key={objkt.id} objkt={objkt}/>)}
         </>
     );
 };

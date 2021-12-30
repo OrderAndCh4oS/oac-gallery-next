@@ -10,7 +10,7 @@ export async function getStaticProps({params}) {
     try {
         gentks = await getFxHashCreatedObjkts(gentkId);
     } catch(e) {
-        console.log(e);
+        console.log('Error:', e);
         gentks = [];
     }
 

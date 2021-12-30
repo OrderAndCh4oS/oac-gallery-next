@@ -2,27 +2,31 @@ import getObjktCreations from '../api/get-objkt-creations';
 import ObjktItem from '../components/objkt-item';
 
 export async function getStaticProps(context) {
-    let objkts = [];
     try {
-        objkts = await getObjktCreations(['KT1KYjLBbv8oq1WAYJnoefoqEpoxCvWLUseN']);
+        const tubes = await getObjktCreations(
+            ['KT1KYjLBbv8oq1WAYJnoefoqEpoxCvWLUseN']);
+        const cliffordAttractor = await getObjktCreations(
+            ['KT1Mzy98Nfcz2GKRpmTy3GPSTjpRMfQev5ga']);
+        return {
+            props: {tubes, cliffordAttractor},
+            revalidate: 300
+        };
     } catch(e) {
-        console.log(e);
+        console.log('Error:', e);
     }
-
-    if(!objkts?.length) return {notFound: true};
-
-    return {
-        props: {objkts},
-        revalidate: 300
-    };
+    return {notFound: true};
 }
 
-export default function Objkt({objkts}) {
-
+export default function Objkt({tubes, cliffordAttractor}) {
     return (
         <>
             <h2>Tubes</h2>
-            {objkts.map((objkt, i) => <ObjktItem
+            {tubes.map((objkt, i) => <ObjktItem
+                key={`${objkt.title}_${i}`}
+                objkt={objkt}
+            />)}
+            <h2>Clifford Attractor</h2>
+            {cliffordAttractor.map((objkt, i) => <ObjktItem
                 key={`${objkt.title}_${i}`}
                 objkt={objkt}
             />)}
