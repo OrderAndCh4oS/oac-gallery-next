@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ObjktItem = ({objkt}) =>
     <div className="box">
-        <Link href={`https://objkt.com/asset/${objkt.fa2_id}/${objkt.id}`} passHref>
+        <Link href={`https://objkt.com/asset/${objkt.fa_contract}/${objkt.token_id}`} passHref>
             <a>
                 <figure>
                     <Image
@@ -14,7 +14,7 @@ const ObjktItem = ({objkt}) =>
                         src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.display_uri.slice(7)}
                         alt={objkt.title}
                     />
-                    <figcaption>{objkt.id}</figcaption>
+                    <figcaption>{objkt.token_id}</figcaption>
                 </figure>
             </a>
         </Link>

@@ -3,10 +3,8 @@ import ObjktItem from '../components/objkt-item';
 
 export async function getStaticProps(context) {
     try {
-        const tubes = await getObjktCreations(
-            ['KT1KYjLBbv8oq1WAYJnoefoqEpoxCvWLUseN']);
-        const cliffordAttractor = await getObjktCreations(
-            ['KT1Mzy98Nfcz2GKRpmTy3GPSTjpRMfQev5ga']);
+        const tubes = await getObjktCreations(['KT1KYjLBbv8oq1WAYJnoefoqEpoxCvWLUseN']);
+        const cliffordAttractor = await getObjktCreations(['KT1Mzy98Nfcz2GKRpmTy3GPSTjpRMfQev5ga']);
         return {
             props: {tubes, cliffordAttractor},
             revalidate: 300

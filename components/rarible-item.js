@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const RaribleItem = ({objkt}) =>
     <div className="box">
-        <Link href={`https://rarible.com/token/tezos/${objkt.fa2_id}:${objkt.id}`} passHref>
+        <Link href={`https://rarible.com/token/tezos/${objkt.fa_contract}:${objkt.token_id}`} passHref>
             <a>
                 <figure>
                     <Image
@@ -14,7 +14,7 @@ const RaribleItem = ({objkt}) =>
                         src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.display_uri.slice(7)}
                         alt={objkt.title}
                     />
-                    <figcaption>{objkt.id}</figcaption>
+                    <figcaption>{objkt.token_id}</figcaption>
                 </figure>
             </a>
         </Link>

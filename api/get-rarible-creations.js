@@ -8,17 +8,17 @@ const query = gql`
             limit: 250,
             offset: $offset,
             where: {
-                creator_id: {_eq: $wallet}
-                fa2: {live: {_eq: true}},
-                fa2_id: {_eq: "KT18pVpRXKPY2c4U2yFEGSH3ZnhB2kL8kwXS"},
+                creators: {creator_address: {_eq: $wallet}},
+                fa: {live: {_eq: true}},
+                fa_contract: {_eq: "KT18pVpRXKPY2c4U2yFEGSH3ZnhB2kL8kwXS"},
                 supply: {_gt: 0},
                 flag: {_neq: "removed"}
             },
             order_by: {timestamp: asc}
         ) {
-            id
-            fa2_id
-            title
+            token_id
+            fa_contract
+            name
             artifact_uri
             display_uri
             thumbnail_uri
@@ -33,7 +33,7 @@ const getRaribleCreations = async(wallet) => {
         let response = null;
         let offset = 0;
         do {
-            response = await request('https://data.objkt.com/v1/graphql',
+            response = await request('https://data.objkt.com/v2/graphql',
                 query,
                 {wallet, offset}
             );

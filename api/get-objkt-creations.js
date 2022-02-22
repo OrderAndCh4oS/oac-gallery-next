@@ -8,15 +8,15 @@ const query = gql`
             limit: 250,
             offset: $offset,
             where: {
-                fa2: {live: {_eq: true}},
-                fa2_id: {_in: $contracts},
+                fa: {live: {_eq: true}},
+                fa_contract: {_in: $contracts},
                 supply: {_gt:0},
             },
             order_by: {timestamp: asc}
         ) {
-            id
-            fa2_id
-            title
+            token_id
+            fa_contract
+            name
             artifact_uri
             display_uri
             thumbnail_uri
@@ -31,10 +31,11 @@ const getObjktCreations = async(contracts) => {
         let response = null;
         let offset = 0;
         do {
-            response = await request('https://data.objkt.com/v1/graphql',
+            response = await request('https://data.objkt.com/v2/graphql',
                 query,
                 {contracts, offset}
             );
+            console.log('re', response)
             if(response?.token?.length) {
                 objkts.push(...response.token);
             }
