@@ -5,7 +5,7 @@ const ObjktSwitch = ({objkt}) => {
         case 'application/x-directory':
             return <iframe
                 className={styles.iframe}
-                src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.artifact_uri.slice(7)}
+                src={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
                 sandbox="allow-scripts allow-same-origin"
                 allow="accelerometer; camera; gyroscope; microphone; xr-spatial-tracking;"
             />;
@@ -13,7 +13,7 @@ const ObjktSwitch = ({objkt}) => {
             return <div>
                 <img
                     className={styles.img}
-                    src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.artifact_uri.slice(7)}
+                    src={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
                     alt={objkt.title}
                 />
             </div>;

@@ -11,7 +11,7 @@ const RaribleItem = ({objkt}) =>
                         width={600}
                         height={600}
                         className={styles.img}
-                        src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.display_uri.slice(7)}
+                        src={'https://ipfs.io/ipfs/' + objkt.display_uri.slice(7)}
                         alt={objkt.title}
                     />
                     <figcaption>{objkt.token_id}</figcaption>

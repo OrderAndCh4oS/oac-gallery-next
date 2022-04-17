@@ -8,7 +8,7 @@ const CollectionItem = ({objkt}) =>
             <figure>
                 <img
                     className={styles.img}
-                    src={'https://orderandchaos.mypinata.cloud/ipfs/' + objkt.display_uri.slice(7)}
+                    src={'https://ipfs.io/ipfs/' + objkt.display_uri.slice(7)}
                     alt={objkt.title}
                 />
                 <figcaption>{objkt.id}</figcaption>

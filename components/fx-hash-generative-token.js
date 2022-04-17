@@ -11,7 +11,7 @@ const FxHashGenerativeToken = ({gentk, path}) => {
                         width={600}
                         height={600}
                         className={styles.img}
-                        src={'https://orderandchaos.mypinata.cloud/ipfs/' + gentk.metadata.displayUri.slice(7)}
+                        src={'https://ipfs.io/ipfs/' + gentk.metadata.displayUri.slice(7)}
                         alt={gentk.title}
                     />
                     <figcaption>{gentk.id}</figcaption>
