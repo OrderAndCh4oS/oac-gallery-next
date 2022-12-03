@@ -36,11 +36,11 @@ export default function Home({gallerySections}) {
     };
 
     return (
-        <>
+        <div>
             {sections.map((section, i) => <GallerySection
                 key={`${section.title}_${i}`}
                 section={section}
             />)}
-        </>
+        </div>
     );
 }
