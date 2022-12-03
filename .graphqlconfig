@@ -10,6 +10,13 @@
         },
         "introspect": false
       },
+      "TezTok": {
+        "url": "https://api.teztok.com/v1/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      },
       "FxHash": {
         "url": "https://api.fxhash.xyz/graphql",
         "headers": {

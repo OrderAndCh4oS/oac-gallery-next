@@ -35,7 +35,6 @@ const getObjktCreations = async(contracts) => {
                 query,
                 {contracts, offset}
             );
-            console.log('re', response)
             if(response?.token?.length) {
                 objkts.push(...response.token);
             }

@@ -1,28 +1,23 @@
 import {gql, request} from 'graphql-request';
 import {parseObjktsResponse} from './parsers';
 
-const query = gql`
-    query ObjktsWithPrice($creatorIds: [String!], $holderIds: [String!]) {
-        hic_et_nunc_token(where: {
-            creator_id: {_in: $creatorIds},
-            token_holders: {
-                quantity: {_gt: "0"},
-                holder_id: {_neq: "tz1burnburnburnburnburnburnburjAYjjX"}
-            }
-        }, order_by: {id: desc}) {
-            id
-            artifact_uri
-            description
-            supply
-            swaps(where: {status: {_eq: "0"}, contract_version: {_neq: "1"}}, order_by: {price: asc}) {
-                price
-            }
-            token_holders(where: {holder_id: {_in: $holderIds}}) {
-                holder_id
-                quantity
-            }
-        }
-    }`;
+const query = gql`query getObjkts($creatorIds: [String!]) {
+    tokens(where: {
+        artist_address: {_in: $creatorIds}
+        burned_editions: {_eq: "0"}
+        name: {_nilike: "Drone Squadron: Elite%"}
+        fa2_address: {_eq: "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton"}
+    },
+        limit: 1000,
+        offset: 0,
+        order_by: {token_id: asc}) {
+        name
+        artifact_uri
+        token_id
+        lowest_price_listing
+        fa2_address
+    }
+}`;
 
 const variables = {
     creatorIds: [
@@ -30,20 +25,11 @@ const variables = {
         'tz1KySTBB8RXWVraggfXWLaLR9H3K3JBEbgt',
         'tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn',
         'tz1iM7PB4brTmkbTUccsrXYjepSQ6ext7KYu'
-    ],
-    holderIds: [
-        'tz1VgpmwW66LCbskjudK54Zp96vKn2cHjpGN',
-        'tz1KySTBB8RXWVraggfXWLaLR9H3K3JBEbgt',
-        'tz1dAcFB4ApJmwvWxWfZBMgU9omabrjx4gWn',
-        'tz1iM7PB4brTmkbTUccsrXYjepSQ6ext7KYu',
-        'KT1HbQepzV1nVGg8QVznG7z4RcHseD5kwqBn',
-        'KT1FvqJwEDWb1Gwc55Jd1jjTHRVWbYKUUpyq'
     ]
 };
 
 const getGallerySections = async() => {
-    const response = await request('https://api.hicdex.com/v1/graphql', query,
-        variables);
+    const response = await request('https://api.teztok.com/v1/graphql', query, variables);
     return parseObjktsResponse(response);
 };
 
