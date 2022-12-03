@@ -1,7 +1,6 @@
 import GallerySection from '../components/gallery-section';
 import getGallerySections from '../api/get-gallery-sections';
 import {createRef, useState} from 'react';
-import styles from './styles.module.css';
 
 export async function getStaticProps(context) {
     let gallerySections;
