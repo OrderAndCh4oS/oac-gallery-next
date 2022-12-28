@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import styles from './objkt-viewer/styles.module.css';
 import Image from 'next/image';
 
 const ObjktItem = ({objkt}) =>
@@ -10,8 +9,7 @@ const ObjktItem = ({objkt}) =>
                     <Image
                         width={600}
                         height={600}
-                        className={styles.img}
-                        src={'https://ipfs.io/ipfs/' + objkt.display_uri.slice(7)}
+                        src={'https://nftstorage.link/ipfs/' + objkt.display_uri.slice(7)}
                         alt={objkt.title}
                     />
                     <figcaption>{objkt.token_id}</figcaption>
@@ -20,7 +18,7 @@ const ObjktItem = ({objkt}) =>
         </Link>
         <a
             className="ipfs-link"
-            href={'https://ipfs.io/ipfs/' + objkt.artifact_uri.slice(7)}
+            href={'https://nftstorage.link/ipfs/' + objkt.artifact_uri.slice(7)}
             title="View IPFS"
         >
             <img

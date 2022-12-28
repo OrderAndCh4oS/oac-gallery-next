@@ -2,7 +2,8 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: [
-        "ipfs.io"
+        "ipfs.io",
+        "nftstorage.link"
     ]
   }
 }

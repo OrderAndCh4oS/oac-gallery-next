@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import styles from './objkt-viewer/styles.module.css';
 
 const CollectionItem = ({objkt}) =>
     <div className="box">
@@ -7,8 +6,7 @@ const CollectionItem = ({objkt}) =>
             <a>
             <figure>
                 <img
-                    className={styles.img}
-                    src={'https://ipfs.io/ipfs/' + objkt.display_uri.slice(7)}
+                    src={'https://nftstorage.link/ipfs/' + objkt.display_uri.slice(7)}
                     alt={objkt.title}
                 />
                 <figcaption>{objkt.id}</figcaption>

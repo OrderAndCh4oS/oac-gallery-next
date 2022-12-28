@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image';
 
-const RaribleItem = ({objkt}) =>
+const ObjktBox = ({objkt}) =>
     <div className="box">
-        <Link href={`https://rarible.com/token/tezos/${objkt.fa_contract}:${objkt.token_id}`} passHref>
+        <Link href={`https://objkt.com/asset/${objkt.fa2_address}/${objkt.token_id}`} passHref>
             <a>
                 <figure>
                     <Image
@@ -16,6 +16,7 @@ const RaribleItem = ({objkt}) =>
                 </figure>
             </a>
         </Link>
+        <div className="xtz">{objkt.lowest_price_listing ? `${objkt.lowest_price_listing?.price * 0.000001}xtz`: 'SOLD'}</div>
         <a
             className="ipfs-link"
             href={'https://nftstorage.link/ipfs/' + objkt.artifact_uri.slice(7)}
@@ -30,4 +31,4 @@ const RaribleItem = ({objkt}) =>
     </div>
 ;
 
-export default RaribleItem;
+export default ObjktBox;

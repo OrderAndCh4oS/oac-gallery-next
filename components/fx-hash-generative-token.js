@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import styles from './objkt-viewer/styles.module.css';
 import Image from 'next/image';
 
 const FxHashGenerativeToken = ({gentk, path}) => {
@@ -10,8 +9,7 @@ const FxHashGenerativeToken = ({gentk, path}) => {
                     <Image
                         width={600}
                         height={600}
-                        className={styles.img}
-                        src={'https://ipfs.io/ipfs/' + gentk.metadata.displayUri.slice(7)}
+                        src={'https://nftstorage.link/ipfs/' + gentk.metadata.displayUri.slice(7)}
                         alt={gentk.title}
                     />
                     <figcaption>{gentk.id}</figcaption>
@@ -20,7 +18,7 @@ const FxHashGenerativeToken = ({gentk, path}) => {
         </Link>
         <a
             className="ipfs-link"
-            href={'https://ipfs.io/ipfs/' + gentk.metadata.artifactUri.slice(7)}
+            href={'https://nftstorage.link/ipfs/' + gentk.metadata.artifactUri.slice(7)}
             title="View IPFS"
         >
             <img
